@@ -18,7 +18,7 @@ void Partida::mostrarGuanyador()  {
         cout << a_t;
         cout << "Les " << a_torn << " han guanyat!" << endl;
 	}
-	else cout << "Ningú ha guanyat..." << endl;
+	else cout << "Ningu ha guanyat..." << endl;
 }
 
 void Partida::jugar() { 
