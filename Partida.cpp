@@ -14,8 +14,11 @@ bool Partida::acabada() const {
 
 void Partida::mostrarGuanyador()  {   
     passarTorn();
-    cout << a_t;
-    cout << "Les " << a_torn << " han guanyat!" << endl;
+	if (a_t.tresEnRatlla(a_torn)) {
+        cout << a_t;
+        cout << "Les " << a_torn << " han guanyat!" << endl;
+	}
+	else cout << "Ningú ha guanyat..." << endl;
 }
 
 void Partida::jugar() { 
